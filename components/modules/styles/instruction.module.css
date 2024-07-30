@@ -1,0 +1,22 @@
+.container
+{
+    margin: 20px 0;
+}
+.container h3
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #02da89;
+    margin-bottom: 20px;
+}
+.container li {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+    list-style: none;
+  }
+  
+  .container li::before {
+    content: "•  ";
+    color: #02da89;
+  }

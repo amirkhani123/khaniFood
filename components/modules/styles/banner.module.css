@@ -1,0 +1,58 @@
+.container
+{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 2px;
+}
+.left h2
+{
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: fit-content;
+    border-bottom: 3px solid #02da89;
+    margin-bottom: 20px;
+}
+.left p
+{
+    margin: 10px 0;
+    font-weight: 400;
+}
+.left span
+{
+    display: inline-block;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: gray;
+   margin-bottom: 30px;
+}
+.link
+{
+    background-color: #02da89;
+    color: white;
+    padding: 10px 30px;
+    width: fit-content;
+    border-radius: 5px;
+   transition: all 0.5s ease-in ;
+}
+.link:hover
+{
+    opacity: 0.5;
+}
+
+.right img
+{
+    width: 420px;
+}
+@media (max-width:780px )and (min-width:550px) {
+    .right img
+   {
+    width: 300px;
+   }   
+}
+@media (max-width:550px) {
+    .right img
+   {
+    display: none;
+   }   
+}

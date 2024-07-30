@@ -1,0 +1,33 @@
+.container
+{
+    margin: 10px 0;
+}
+.container h3
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #02da89;
+}
+.main
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main div
+{
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: rgba(92, 245, 115, 0.123) 0px 4px 16px,
+      rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    text-align: center;
+    padding: 25px 20px 20px;
+    margin-top: 20px;
+    height: 150px;
+}
+.main div p
+{
+    font-weight: 400;
+    font-size: 0.9rem;
+}
