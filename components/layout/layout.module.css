@@ -1,0 +1,35 @@
+.header
+{
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px auto;
+}
+.left 
+{
+    color: #02da89;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.right a
+{
+ margin: 0 10px;
+}
+.container
+{
+    height: 100vh;
+}
+.footer
+{
+    background-color: #02da89;
+    color: #ffffff;
+    text-align: center;
+    padding: 2px;
+}
+.footer p
+{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
