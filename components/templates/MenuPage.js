@@ -7,7 +7,7 @@ function MenuPage({ foods }) {
       <h1>MENU</h1>
       <div className={classes.subContainer}>
         {foods.map((food) => (
-          <Card {...food} />
+          <Card {...food} key={food.id} />
         ))}
       </div>
     </div>
