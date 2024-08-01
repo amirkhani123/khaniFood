@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import Dollar from "../icons/Dollar";
 import Location from "../icons/Location";
 import classes from "./detailsPage.module.css";
@@ -23,13 +24,11 @@ function DetailsPage(props) {
             )}
           </span>
           <div>
-            <span className={classes.discount}>
-              {discount ? (
-                <div>
-                  <span>{discount} % OFF</span>
-                </div>
-              ) : null}
-            </span>
+            {discount ? (
+              <div className={classes.discount}>
+                <span>{discount} % OFF</span>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
@@ -52,7 +51,14 @@ function DetailsPage(props) {
           ))}
         </ul>
       </div>
-      <button className={classes.button}>ADD TO CARD</button>
+      <button
+        className={classes.button}
+        onClick={() => {
+          toast.error("This dont work !");
+        }}
+      >
+        ADD TO CARD
+      </button>
     </div>
   );
 }
