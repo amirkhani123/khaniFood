@@ -51,8 +51,14 @@
    }   
 }
 @media (max-width:550px) {
-    .right img
+    .container
    {
-    display: none;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+    text-align: center;
    }   
+   .left h2
+   {
+    margin: 10px auto;
+   }
 }

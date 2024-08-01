@@ -1,0 +1,87 @@
+.card
+{
+    margin: 20px;
+    width: 300px;
+    height: 450px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(27, 28, 27, 0.123) 0px 4px 16px,
+    rgba(9, 9, 14, 0.05) 0px 8px 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items: center; */
+}
+.card img
+{
+    border-radius: 10px;
+    width: 100%;
+}
+.details
+{
+
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.details h4
+{
+    color: #02da89;
+}
+.details div
+{
+    color: gray;
+}
+.priceDiv
+{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    
+}
+.discountP
+{
+    color: #ef476f;
+}
+.discount{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-color: #e71d36;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 2px;
+}
+.card a
+{
+    margin: 10px;
+    width: 98%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #02da89;
+    color: #FFFFff;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    margin: 5px auto;
+    padding: 5px 0;
+}
+.card a:hover
+{
+    opacity: 0.5;
+}
+@media (max-width:680px) {
+    .card{
+        width: 100%;
+        margin: 50px;
+        height: 560px;
+    }
+    .card a{
+        padding: 5px 0;
+        width: 98%;
+    }
+
+    
+}
