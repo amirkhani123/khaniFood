@@ -1,10 +1,21 @@
 import { useRouter } from "next/router";
 import DetailsPage from "../../components/templates/DetailsPage";
+import { RotatingLines } from "react-loader-spinner";
 
 function Details({ food }) {
   const router = useRouter();
-  if (router.isFallback) {
-    <h2>LOADING ...</h2>;
+  if (!router.isFallback) {
+    <div
+      style={{
+        maxWidth: "1100px",
+        margin: "165px auto",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <RotatingLines width="250" strokeColor="#02da89" strokeWidth="1" />
+    </div>;
   }
   return (
     <div>
