@@ -26,7 +26,7 @@ function Details({ food }) {
 
 export default Details;
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:4000/data");
+  const res = await fetch(`${process.env.BASE_URL}/data`);
   const foods = await res.json();
   const myFoods = foods.slice(0, 5);
   const paths = myFoods.map((food) => ({ params: { id: food.id.toString() } }));
@@ -41,7 +41,7 @@ export async function getStaticProps({ params }) {
       notFound: true,
     };
   }
-  const res = await fetch(`http://localhost:4000/data/${params.id}`);
+  const res = await fetch(`${process.env.BASE_URL}/data/${params.id}`);
   const food = await res.json();
   return {
     props: {

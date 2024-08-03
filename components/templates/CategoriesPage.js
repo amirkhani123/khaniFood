@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import classes from "./categoriesPage.module.css";
 import { useRouter } from "next/router";
 import Card from "../modules/Card";
+import toast from "react-hot-toast";
 
 function CategoriesPage({ data }) {
   const [query, setQuery] = useState({ difficulty: "", time: "" });
@@ -16,7 +17,11 @@ function CategoriesPage({ data }) {
     setQuery((query) => ({ ...query, [e.target.name]: e.target.value }));
   };
   const clickHandeler = () => {
-    router.push({ pathname: "/categories", query });
+    if (!query.difficulty && !query.time) {
+      toast.error("select once filter");
+    } else {
+      router.push({ pathname: "/categories", query });
+    }
   };
   return (
     <div className={classes.container}>

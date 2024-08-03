@@ -13,7 +13,7 @@ function NotFoundPage() {
       }}
     >
       <img src="/images/notFound.png" alt="notFoundImage" style={{width:"50%"}}/>
-      <h1 style={{ fontSize: "1.2rem",fontWeight:"500",color:"red" }}>NOT FOUND PAGE !!🫠</h1>
+      <h1 style={{ fontSize: "1.2rem",fontWeight:"500",color:"#e63946" }}>NOT FOUND PAGE !!🫠</h1>
     </div>
   );
 }
