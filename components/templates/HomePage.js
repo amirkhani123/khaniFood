@@ -2,7 +2,6 @@ import Attributes from "../modules/Attributes";
 import Banner from "../modules/Banner";
 import Companys from "../modules/Companys";
 import Definition from "../modules/Definition";
-import Guide from "../modules/Guide";
 import Instruction from "../modules/Instruction";
 import References from "../modules/References";
 import classes from "./homePage.module.css";
@@ -15,7 +14,6 @@ function HomePage() {
       <Definition />
       <Companys />
       <Instruction />
-      <Guide />
       <References />
     </div>
   );
