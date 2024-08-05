@@ -1,0 +1,21 @@
+.container
+{
+    max-width: 1100px;
+    margin: auto;
+}
+.container h1
+{
+    width: fit-content;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-bottom: solid 5px #02da89;
+    margin: 20px ;
+    margin-left: 65px;
+}
+.subContainer
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}

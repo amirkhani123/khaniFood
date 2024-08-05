@@ -4,8 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
     margin: 10px auto;
+    padding:  0 5px;
 }
 .left 
 {
@@ -16,7 +16,7 @@
 .right a
 {
  margin: 0 10px;
- transition: all 0.5gits ease-in;
+ transition: all 0.5s ease-in;
  position: relative;
 }
 .right a:hover
@@ -54,4 +54,58 @@
 .container
 {
     min-height: 100vh;
+}
+.menu
+{
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+.menu ul
+{
+position: absolute;
+width: 150px;
+top: 30px;
+right: -5px;
+box-shadow: rgba(27, 28, 27, 0.123) 0px 4px 16px,
+    rgba(9, 9, 14, 0.05) 0px 8px 32px;
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 10;
+    background-color: #ffff;
+    list-style: none;
+}
+.menu ul li::before{
+    content: "•  ";
+    color: #02da89;
+}
+.menu ul li{
+    position: relative;
+    margin: 0 5px;
+}
+.menu ul li a::before
+{
+    content: " ";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0%;
+    background: #02da89;
+    height: 2px;
+    transition: all 0.5s ease-in;
+}
+.menu ul li a:hover::before
+{
+    width: 100%;
+}
+@media (max-width:500px) {
+.right
+{
+    display: none;
+}
+.menu
+{
+    display: inline-block;
+}
+
 }
