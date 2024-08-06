@@ -17,6 +17,6 @@ export async function getStaticProps() {
     props: {
       foods,
     },
-    revalidate: 20,
+    revalidate: 60 * 60,
   };
 }

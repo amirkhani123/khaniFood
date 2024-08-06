@@ -128,7 +128,7 @@
 {
     opacity: 0.5;
 }
-@media (max-width:650px) {
+@media (max-width:650px) and (min-width:480px) {
     .container
     {
         margin: 0 15px;
@@ -139,7 +139,13 @@
 }
 .discount
 {
-    width: 250px;
+    width: 200px;
+} 
 }
-    
+@media (max-width:480px) {
+  
+.discount
+{
+    width: 150px;
+} 
 }
