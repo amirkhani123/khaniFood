@@ -144,6 +144,14 @@
 }
 @media (max-width:480px) {
   
+    .container
+    {
+        margin: 0 10px;
+    }
+    .subContainer img
+{
+    width: 150px;
+}
 .discount
 {
     width: 150px;
