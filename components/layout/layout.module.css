@@ -13,11 +13,13 @@
     font-size: 1.2rem;
     font-weight: 500;
 }
+
 .right a
 {
  margin: 0 10px;
  transition: all 0.5s ease-in;
  position: relative;
+ 
 }
 .right a:hover
 {
@@ -106,6 +108,9 @@ box-shadow: rgba(27, 28, 27, 0.123) 0px 4px 16px,
 .menu
 {
     display: inline-block;
+}
+.left a{
+    font-family: "marhey";
 }
 
 }
