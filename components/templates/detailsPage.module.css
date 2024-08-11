@@ -136,6 +136,7 @@
     .subContainer img
 {
     width: 200px;
+    height: 200px;
 }
 .discount
 {
@@ -151,6 +152,7 @@
     .subContainer img
 {
     width: 210px;
+    height: 250px;
 }
 .discount
 {

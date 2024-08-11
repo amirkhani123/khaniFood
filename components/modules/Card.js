@@ -2,12 +2,13 @@ import Link from "next/link";
 import Dollar from "../icons/Dollar";
 import Location from "../icons/Location";
 import classes from "./styles/card.module.css";
+import Image from "next/image";
 
 function Card(props) {
   const { id, name, price, discount, details } = props;
   return (
     <div className={classes.card}>
-      <img src={`/images/${id}.png`} alt={name} />
+      <Image src={`/images/${id}.png`} alt={name} width={1000} height={300} />
       <div className={classes.details}>
         <h4>{name}</h4>
         <div>

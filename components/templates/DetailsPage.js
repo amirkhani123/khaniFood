@@ -2,13 +2,14 @@ import toast from "react-hot-toast";
 import Dollar from "../icons/Dollar";
 import Location from "../icons/Location";
 import classes from "./detailsPage.module.css";
+import Image from "next/image";
 function DetailsPage(props) {
   const { id, name, price, discount, details, ingredients } = props;
   return (
     <div className={classes.container}>
       <h2>DETAILS</h2>
       <div className={classes.subContainer}>
-        <img src={`/images/${id}.png`} alt={name} />
+        <Image src={`/images/${id}.png`} alt={name} width={1000} height={300} />
         <div>
           <h3>{name}</h3>
           <span className={classes.Location}>

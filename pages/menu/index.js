@@ -1,8 +1,12 @@
+import Head from "next/head";
 import MenuPage from "../../components/templates/MenuPage";
 
 function Menu({ foods }) {
   return (
     <div>
+    <Head>
+      <title>KhaniFood | menu</title>
+    </Head>
       <MenuPage foods={foods} />
     </div>
   );

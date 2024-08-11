@@ -3,6 +3,7 @@ import classes from "./categoriesPage.module.css";
 import { useRouter } from "next/router";
 import Card from "../modules/Card";
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 function CategoriesPage({ data }) {
   const [query, setQuery] = useState({ difficulty: "", time: "" });
@@ -48,7 +49,9 @@ function CategoriesPage({ data }) {
         {data.length ? (
           data.map((food) => <Card key={food.id} {...food} />)
         ) : (
-          <img
+          <Image
+            width={1000}
+            height={475}
             src="/images/search1.png"
             alt="searchImg"
             className={classes.img}

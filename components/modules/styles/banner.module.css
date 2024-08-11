@@ -47,7 +47,8 @@
 @media (max-width:780px )and (min-width:550px) {
     .right img
    {
-    width: 300px;
+    width: 310px;
+    height: 355px;
    }   
 }
 @media (max-width:550px) {
