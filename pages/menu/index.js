@@ -1,12 +1,10 @@
-import Head from "next/head";
+import Title from "../../components/modules/Title";
 import MenuPage from "../../components/templates/MenuPage";
 
 function Menu({ foods }) {
   return (
     <div>
-    <Head>
-      <title>KhaniFood | menu</title>
-    </Head>
+      <Title title="KhaniFood | menu" />
       <MenuPage foods={foods} />
     </div>
   );

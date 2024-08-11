@@ -5,7 +5,6 @@ class myDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>KhaniFood</title>
           <link rel="icon" href="/icon.svg" />
         </Head>
         <body>

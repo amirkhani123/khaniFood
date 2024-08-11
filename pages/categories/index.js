@@ -1,8 +1,10 @@
+import Title from "../../components/modules/Title";
 import CategoriesPage from "../../components/templates/CategoriesPage";
 
 function Categories({ data }) {
   return (
     <div>
+      <Title title="KhaniFood | categories" />
       <CategoriesPage data={data} />
     </div>
   );

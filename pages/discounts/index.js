@@ -1,8 +1,10 @@
+import Title from "../../components/modules/Title";
 import DiscountsPage from "../../components/templates/DiscountsPage";
 
 function Descounts({ data }) {
   return (
     <div>
+      <Title title="KhaniFood | discount" />
       <DiscountsPage data={data} />
     </div>
   );

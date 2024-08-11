@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import DetailsPage from "../../components/templates/DetailsPage";
 import { RotatingLines } from "react-loader-spinner";
+import Title from "../../components/modules/Title";
 
 function Details({ food }) {
   const router = useRouter();
@@ -21,6 +22,7 @@ function Details({ food }) {
   }
   return (
     <div>
+      <Title title="KhaniFood | details" />
       <DetailsPage {...food} />
     </div>
   );
