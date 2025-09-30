@@ -6,10 +6,10 @@ function Banner() {
   return (
     <div className={classes.container}>
       <div className={classes.left}>
-        <h2>KhaniFood</h2>
+        <h2>AvaFood</h2>
         <p>Food Delivery and takeout !</p>
         <span>
-          KhaniFood is an online food ordering and delivery platform launched by
+        AvaFood is an online food ordering and delivery platform launched by
           Amir Khani in 2022. Meals are delivered by couriers using cars,
           scooters, bikes, or on foot.
         </span>

@@ -17,13 +17,13 @@ function Card(props) {
         </div>
       </div>
       <div className={classes.priceDiv}>
-        <Dollar />
+        {/* <Dollar /> */}
         {discount ? (
           <span className={classes.discountP}>
-            {(price * (100 - discount)) / 100}$
+            {(price * (100 - discount)) / 100}t
           </span>
         ) : (
-          <span className={classes.price}>{price}$</span>
+          <span className={classes.price}>{price}t</span>
         )}
       </div>
       {discount ? <div className={classes.discount}>{discount} %</div> : null}

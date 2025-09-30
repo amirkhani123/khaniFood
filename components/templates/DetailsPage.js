@@ -19,9 +19,9 @@ function DetailsPage(props) {
           <span className={classes.price}>
             <Dollar />
             {discount ? (
-              <span>{(price * (100 - discount)) / 100} $</span>
+              <span>{(price * (100 - discount)) / 100} t</span>
             ) : (
-              <span>{price}$</span>
+              <span>{price}t</span>
             )}
           </span>
           <div>
